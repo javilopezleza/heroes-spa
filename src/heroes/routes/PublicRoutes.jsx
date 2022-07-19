@@ -8,5 +8,5 @@ export const PublicRoutes = ({children}) => {
 
   return (!logged)
   ? children
-  : <Navigate to ="/marvel" />
+  : <Navigate to ="/heroes-spa/marvel" />
 }
