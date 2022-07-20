@@ -24,10 +24,10 @@ export const HeroCard = ({
 
     return (
         <>
-            <div className="col col-md-4 col-12 col-sm-12 animate__animated animate__fadeIn">
+            <div className="col col-md-4 col-lg-4 col-12 col-sm-12 animate__animated animate__fadeIn">
                 <div className="card">
                     <div className="row no-gutters">
-                        <div className="col-4 col-12 col-md-4 col-sm-12 ">
+                        <div className="col-4 col-12 col-lg-4 col-md-8 col-sm-12 ">
                             <img src={heroImageUrl} className="card-img" alt={superhero} />
                         </div>
                         <div className="col-8 col-md-8 col-sm-12">
