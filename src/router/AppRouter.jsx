@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { LoginPage } from "../auth"
 import { HeroesRoutes } from "../heroes"
 import { PrivateRoute } from "../heroes/routes/PrivateRoute"
-import { PublicRoutes } from "../heroes/routes/PublicRoutes"
+import { PublicRoutes } from "./PublicRoutes"
 
 export const AppRouter = () => {
   return (

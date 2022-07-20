@@ -4,8 +4,8 @@ import { AuthContext } from '../../auth/context/AuthContext';
 
 
 export const Navbar = () => {
-    
-    const {user, logout} = useContext(AuthContext);
+
+    const { user, logout } = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -47,7 +47,7 @@ export const Navbar = () => {
                         className={({ isActive }) => `nav-link nav-item ${isActive ? 'active' : ''}`}
                         to="/search"
                     >
-                       Search
+                        Search
                     </NavLink>
                 </div>
             </div>
