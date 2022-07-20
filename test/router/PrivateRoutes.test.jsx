@@ -9,6 +9,8 @@ describe('Pruebas en <PrivateRoutes />', () => {
 
     test('debe mostrar el children si esta logeado', () => {
 
+        Storage.prototype.setItem = jest.fn();
+
         const contextValue = {
             logged: true,
             user: {
@@ -28,7 +30,8 @@ describe('Pruebas en <PrivateRoutes />', () => {
             </AuthContext.Provider>
         );
 
-        expect(screen.getByText('Ruta privada')).toBeTruthy()
+        expect(screen.getByText('Ruta privada')).toBeTruthy();
+        expect(localStorage.setItem).toHaveBeenCalled(); 
 
     });
 
