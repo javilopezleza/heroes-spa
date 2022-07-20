@@ -3,7 +3,7 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 
 import { useContext } from "react";
 import { AuthContext } from "../../src/auth";
-import { PublicRoutes } from "../../src/router/PublicRoutes";
+import { PublicRoutes } from "../../src/heroes/routes/PublicRoutes";
 
 
 describe('pruebas en <PublicRoutes />', () => {
